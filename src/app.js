@@ -17,4 +17,7 @@ app.get( '/', ( req, res ) => {
 
 io.of( '/stream' ).on( 'connection', stream );
 
-server.listen(3000);
+// server.listen(3000);
+app.listen(3000,()=>{
+    console.log('server listning at 3000');
+})
